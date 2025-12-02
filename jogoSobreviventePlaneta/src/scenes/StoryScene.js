@@ -139,7 +139,8 @@ export class StoryScene extends Phaser.Scene {
         this.add.rectangle(width/2, 400, 750, 300, 0x000000, 0.9).setStrokeStyle(4, 0xffffff);
         this.add.text(width/2, 290, 'Sobreviveste à queda...', { fontSize: '30px', fill: '#00ff00', fontStyle: 'bold', stroke:'#000', strokeThickness:4 }).setOrigin(0.5);
         this.add.text(width/2, 350, 'A tua nave foi destruída e a carga espalhou-se.\nOs Aliens locais estão a tentar roubar a Energia!', { fontSize: '20px', fill: '#ffffff', align: 'center', stroke:'#000', strokeThickness:3 }).setOrigin(0.5);
-        
+        this.add.text(width/2, 400, 'Apanhe as peças para aumentar o recorde e\napanhe as baterias para ganhar energia!', { fontSize: '20px', fill: '#ffffff', align: 'center', stroke:'#000', strokeThickness:3 }).setOrigin(0.5);
+
         const btn = this.add.text(width/2, 480, '[ COMEÇAR MISSÃO ]', { 
             fontSize: '32px', fill: '#000000', backgroundColor: '#00ff00', padding: { x: 15, y: 10 }, fontStyle: 'bold' 
         }).setOrigin(0.5).setInteractive({ useHandCursor: true });

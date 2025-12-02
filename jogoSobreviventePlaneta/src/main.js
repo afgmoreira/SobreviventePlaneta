@@ -5,6 +5,7 @@ import { GameScene } from './scenes/GameScene.js';
 import { GameOverScene } from './scenes/GameOverScene.js';
 import { OptionsScene } from './scenes/OptionsScene.js';
 import { StoryScene } from './scenes/StoryScene.js';
+import { InstructionsScene } from './scenes/InstructionsScenes.js';
 
 // Configuração principal do Phaser
 const config = {
@@ -35,7 +36,7 @@ const config = {
     
     // Lista de Cenas pela ordem de execução
     // A primeira cena (PreloaderScene) arranca automaticamente
-    scene: [PreloaderScene, MenuScene, OptionsScene, StoryScene, GameScene, GameOverScene]
+    scene: [PreloaderScene, MenuScene, OptionsScene, InstructionsScene, StoryScene, GameScene, GameOverScene]
 };
 
 // Iniciar o jogo com as configurações acima
